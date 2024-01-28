@@ -25,7 +25,9 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Smart Commutee <span className="navbar-sign">+</span>
+          Smart Commute <span className="navbar-sign">
+          
+          </span>
         </Link>
       </h1>
 

@@ -22,15 +22,15 @@ function AppointmentForm() {
     // Validate form inputs
     const errors = {};
     if (!patientName.trim()) {
-      errors.patientName = "Patient name is required";
-    } else if (patientName.trim().length < 8) {
-      errors.patientName = "Patient name must be at least 8 characters";
+      errors.patientName = "Location is required";
+    } else if (patientName.trim().length <= 0) {
+      errors.patientName = "Location cannot be null";
     }
 
     if (!patientNumber.trim()) {
-      errors.patientNumber = "Patient phone number is required";
-    } else if (patientNumber.trim().length !== 10) {
-      errors.patientNumber = "Patient phone number must be of 10 digits";
+      errors.patientNumber = "Location is required";
+    } else if (patientNumber.trim().length <= 0) {
+      errors.patientNumber = "Location cannot be null";
     }
 
     if (patientGender === "default") {
@@ -57,10 +57,7 @@ function AppointmentForm() {
     // Reset form fields and errors after successful submission
     setPatientName("");
     setPatientNumber("");
-    setPatientGender("default");
     setAppointmentTime("");
-    setPreferredMode("default");
-    setFormErrors({});
 
     toast.success("Appointment Scheduled !", {
       position: toast.POSITION.TOP_CENTER,
@@ -73,7 +70,7 @@ function AppointmentForm() {
     <div className="appointment-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Health <span className="legal-siteSign">+</span>
+          Start your journey <span className="legal-siteSign">!</span>
         </Link>
       </h1>
 
@@ -84,7 +81,7 @@ function AppointmentForm() {
 
         <form className="form-content" onSubmit={handleSubmit}>
           <label>
-           Entry Location
+           Boarding Location
             <input
               type="text"
               value={patientName}
@@ -96,7 +93,7 @@ function AppointmentForm() {
 
           <br />
           <label>
-            Patient Phone Number:
+            Destination Location:
             <input
               type="text"
               value={patientNumber}
@@ -106,25 +103,10 @@ function AppointmentForm() {
             {formErrors.patientNumber && <p className="error-message">{formErrors.patientNumber}</p>}
           </label>
 
-          <br />
-          <label>
-            Patient Gender:
-            <select
-              value={patientGender}
-              onChange={(e) => setPatientGender(e.target.value)}
-              required
-            >
-              <option value="default">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="private">I will inform Doctor only</option>
-            </select>
-            {formErrors.patientGender && <p className="error-message">{formErrors.patientGender}</p>}
-          </label>
 
           <br />
           <label>
-            Preferred Appointment Time:
+            Preferred travel date and Time:
             <input
               type="datetime-local"
               value={appointmentTime}
@@ -135,31 +117,19 @@ function AppointmentForm() {
           </label>
 
           <br />
-          <label>
-            Preferred Mode:
-            <select
-              value={preferredMode}
-              onChange={(e) => setPreferredMode(e.target.value)}
-              required
-            >
-              <option value="default">Select</option>
-              <option value="voice">Voice Call</option>
-              <option value="video">Video Call</option>
-            </select>
-            {formErrors.preferredMode && <p className="error-message">{formErrors.preferredMode}</p>}
-          </label>
+          
 
           <br />
           <button type="submit" className="text-appointment-btn">
-            Confirm Appointment
+            Confirm Destination
           </button>
 
-          <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Appointment details has been sent to the patients phone number via SMS.</p>
+          <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Travel details has been sent to the user's phone number via SMS.</p>
         </form>
       </div>
 
       <div className="legal-footer">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© 2024 Smart Commute. All rights reserved.</p>
       </div>
 
       <ToastContainer autoClose={5000} limit={1} closeButton={false} />

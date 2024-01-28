@@ -10,7 +10,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Smart Commutee <span className="ft-sign">+</span>
+              Smart Commute <span className="ft-sign">+</span>
             </p>
             <p className="ft-description">
             Discover a stress-free commute with us! Our dedicated team is on a mission to optimize your travel experience. We value your feedback and are committed to delivering a seamless journey. Meet our passionate team, shaping the future of travel. Join us in revolutionizing your commute – your satisfaction is our priority! </p>

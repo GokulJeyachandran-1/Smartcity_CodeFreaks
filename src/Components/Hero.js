@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/ward.png";
+import Doctor from "../Assets/heroimmage.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate  } from "react-router-dom";
@@ -36,12 +36,12 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">Smart Commuttee</p>
+          <p className="text-headline">Smart Commute </p>
           <h2 className="text-title">
-           Have a safest journey
+           Your travel companion!
           </h2>
           <p className="text-descritpion">
-          Revolutionize travel with an all-in-one app, offering ignition control, personalized diversion suggestions, crowd-sourced info, multi-lingual support, and integrated calendar analysis for efficient transportation </p>
+          Revolutionize travel with an all-in-one app, offering ignition control, personalized diversion suggestions, crowd-sourced info and integrated calendar analysis for efficient transportation with Multi-lingual support</p>
           <button
             className="text-appointment-btn"
             type="button"
