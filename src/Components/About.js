@@ -15,7 +15,7 @@ function About() {
   };
 
   const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+    navigate("/ticket");
   };
   return (
     <div className="about-section" id="about">

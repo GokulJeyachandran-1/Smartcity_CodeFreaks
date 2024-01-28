@@ -10,7 +10,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Smart Commute <span className="ft-sign">+</span>
+              Smart Commute 
             </p>
             <p className="ft-description">
             Discover a stress-free commute with us! Our dedicated team is on a mission to optimize your travel experience. We value your feedback and are committed to delivering a seamless journey. Meet our passionate team, shaping the future of travel. Join us in revolutionizing your commute – your satisfaction is our priority! </p>
@@ -23,10 +23,10 @@ function Footer() {
           <p className="ft-list-title">Services</p>
           <ul className="ft-list-items">
             <li>
-              <a href="#services">Issue Reporting and Resolution</a>
+              <a href="#services">Dynamic traffic management</a>
             </li>
             <li>
-              <a href="#services">Emergency Response</a>
+              <a href="#services">Emergency Scheduling</a>
             </li>
             <li>
               <a href="#services">Healthcare Services</a>
@@ -35,7 +35,7 @@ function Footer() {
               <a href="#services">Community Engagement</a>
             </li>
             <li>
-              <a href="#services">Legal Assistance</a>
+              <a href="#services">Community Engagement</a>
             </li>
           </ul>
         </div>
@@ -65,15 +65,11 @@ function Footer() {
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@healthplus.com">wardcouncilor@wardapp.com</a>
+              <a href="mailto:rohitvijayan1111@gmail.com">rohitvijayan1111@gmail.com</a>
             </li>
+            
             <li>
-              <a href="mailto:appointment@healthplus.com">
-              healthdirector@wardapp.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+022 5454 5252">+91 87965 87943</a>
+              <a href="tel:+022 5454 5252">+91 99880 78097</a>
             </li>
             <li>
               <a href="tel:+022 2326 6232">+91 97856 34587</a>

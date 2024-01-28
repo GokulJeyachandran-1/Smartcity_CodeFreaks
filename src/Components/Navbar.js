@@ -48,11 +48,7 @@ function Navbar() {
              Issues
           </a>
         </li>
-        <li>
-          <a href="#reviews" className="navbar-links">
-            Updates
-          </a>
-        </li>
+        
         <li>
           <a href="#doctors" className="navbar-links">
             About
@@ -63,7 +59,7 @@ function Navbar() {
       <button
         className="navbar-btn"
         type="button"
-        disabled={isButtonDisabled}
+        //disabled={isButtonDisabled}
         onClick={handleChatBtnClick}
       >
         <FontAwesomeIcon  /> Profile

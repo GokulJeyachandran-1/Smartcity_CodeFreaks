@@ -1,9 +1,4 @@
 import React from "react";
-import DoctorCard from "./DoctorCard";
-import profile1 from "../Assets/about 3.jpg";
-import profile2 from "../Assets/about 1.jpeg";
-import profile3 from "../Assets/about 4.jpg";
-import profile4 from "../Assets/about 6.jpg";
 import "../Styles/Doctors.css";
 
 function Doctors() {
@@ -11,7 +6,7 @@ function Doctors() {
     <div className="doctor-section" id="doctors">
       <div className="dt-title-content">
         <h3 className="dt-title">
-          <span>ABOUT US</span>
+          <span>ABOUT</span>
         </h3>
 
         <p className="dt-description">
