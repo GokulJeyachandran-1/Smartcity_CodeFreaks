@@ -14,7 +14,7 @@ function MapEmbed() {
           className="no-scroll"
           allowFullScreen
           src="https://www.embed-map.com/m.html?id=1890"
-          
+
         ></iframe>
         </removeScrollBar>
       </div>

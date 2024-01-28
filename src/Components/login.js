@@ -5,6 +5,7 @@ import '../Styles/login.css';
 
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import {auth} from './firebase/setup'
+import { Navigate } from "react-router-dom";
 
 
 
@@ -32,6 +33,7 @@ function Login(){
         try{
                 const data = await user.confirm(otp)
                 console.log(data)
+                Navigate("/home")
             }
             catch(err){
                 console.log(err)

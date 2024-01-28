@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <Router basename="/Health-Plus">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login/>}/>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/Home" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/map" element={<MapEmbed/>} />
           <Route path="/appointment" element={<Appointment />} />

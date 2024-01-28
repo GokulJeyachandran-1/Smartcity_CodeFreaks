@@ -16,7 +16,7 @@ function Footer() {
             Discover a stress-free commute with us! Our dedicated team is on a mission to optimize your travel experience. We value your feedback and are committed to delivering a seamless journey. Meet our passionate team, shaping the future of travel. Join us in revolutionizing your commute – your satisfaction is our priority! </p>
           </div>
 
-          <SubscribeNewsletter />
+          
         </div>
 
         <div className="ft-list">
@@ -34,9 +34,7 @@ function Footer() {
             <li>
               <a href="#services">Community Engagement</a>
             </li>
-            <li>
-              <a href="#services">Community Engagement</a>
-            </li>
+            
           </ul>
         </div>
 
@@ -51,9 +49,6 @@ function Footer() {
             </li>
             <li>
               <Link to={"/legal"}>Terms of Services</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>Consultations</Link>
             </li>
             <li>
               <Link to={"/legal"}>How it Works</Link>
